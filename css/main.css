@@ -1,0 +1,115 @@
+@font-face {
+  font-family: gothamMedium;
+  src: url(../fonts/GothamMediumRegular.otf);
+}
+
+@font-face {
+  font-family: gothamThin;
+  src: url(../fonts/Gotham-Thin.otf);
+}
+
+@font-face {
+  font-family: gothamBold;
+  src: url(../fonts/Gotham-Bold.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  color: #1C1C1C;
+  font-family: gothamMedium;
+}
+
+.text-secondary{
+  color: #777777;
+}
+
+.caps{
+  text-transform: uppercase;
+}
+
+.nav{
+  box-sizing: border-box;
+  display: flex;
+    justify-content: flex-end;
+  font-size: 0.8em;
+  padding: 2vh;
+  height: 5vh;
+}
+
+.nav a:link, a:visited, a:hover, a:active{
+  color: inherit;
+  margin-left: 1.5em;
+  text-decoration: none;
+}
+
+.nav a:hover, a:active{
+  border-bottom: 2px solid #1C1C1C;
+  padding-bottom: 1.5em;
+}
+
+.main-splash{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 90vh;
+}
+
+.splash-content{
+  text-align: center;
+  width: 100%;
+}
+
+.aligner-bottom{
+  align-self: flex-end;
+}
+
+.splash-content h1{
+  font-family: gothamThin;
+  font-size: 2.6em;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.2em;
+}
+
+.splash-location{
+  font-family: gothamThin;
+  font-size: 0.9em;
+  margin-bottom: 0.7em;
+}
+
+.splash-nav{
+  font-family: gothamThin;
+  font-size: 0.7em;
+}
+
+.splash-nav-flex{
+  display: inline-flex;
+    align-items: center;
+}
+
+.splash-nav a:link, a:visited, a:hover, a:active{
+  color: inherit;
+  text-decoration: none;
+}
+
+.splash-nav a:hover{
+  /* border-bottom: 1px solid #1C1C1C; */
+  margin: 0;
+}
+
+.splash-nav i{
+  font-size: 0.3em;
+  margin: 0 0.7em;
+}
+
+
+
+
+
+
+
+
+/* end :) */
