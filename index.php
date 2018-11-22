@@ -1,6 +1,6 @@
-<?php require 'header.php'; ?>
+<?php require 'splash-header.php'; ?>
 
-    <div class="main-splash">
+    <div class="main-centred">
 
       <div class="splash-content">
 
@@ -15,6 +15,10 @@
             <i class="fas fa-circle"></i>
             <a href="photog.php">Photography</a>
           </div>
+        </div>
+
+        <div class="cta">
+          <div><a href="projects.php" class="cta-text">explore</a></div>
         </div>
 
       </div>

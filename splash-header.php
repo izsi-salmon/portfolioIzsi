@@ -9,10 +9,6 @@
   </head>
   <body>
 
-    <div class="link-home">
-      <a href="index.php">izsi</a>
-    </div>
-
     <div class="nav caps">
       <a href="projects.php">projects</a>
       <a href="contact.php">contact</a>
