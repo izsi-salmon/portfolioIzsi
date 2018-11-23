@@ -23,12 +23,20 @@ html{
   font-family: gothamMedium;
 }
 
-body{
-  background-color: #ffbbec;
+.background-colour{
+  background-color: #fff;
   background-image: -webkit-linear-gradient(290deg, #ffbbec 0%, #ffb26e 100%);
   background-image: -o-linear-gradient(290deg, #ffbbec 0%, #ffb26e 100%);
   background-image: linear-gradient(20deg, #ffbbec 0%, #ffb26e 100%);
   height: 100vh;
+}
+
+.background-colour-contact{
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(290deg, #ffbbec 0%, #ffb26e 100%);
+  background-image: -o-linear-gradient(290deg, #ffbbec 0%, #ffb26e 100%);
+  background-image: linear-gradient(20deg, #ffbbec 0%, #ffb26e 100%);
+  height: 25vh;
 }
 
 .text-secondary{
@@ -127,10 +135,8 @@ body{
 }
 
 .cta{
-  background-image: linear-gradient(20deg, #ffbbec 0%, #ffb26e 100%);
   border-radius: 1em;
   display: inline-block;
-  mix-blend-mode: screen;
   margin-top: 2.3em;
 }
 
@@ -170,11 +176,33 @@ a.cta-text:link, a.cta-text:visited, a.cta-text:hover, a.cta-text:active{
   color: #fff;
   background-color: #1C1C1C;
   mix-blend-mode: multiply;
-  /* transition: 0.5s; */
+  transition: 0.5s;
 }
 
-.link-project:hover{
-  background-image: linear-gradient(20deg, #ffbbec 0%, #ffb26e 100%);
+/* contact */
+
+.floating-content{
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  width: 90%;
+}
+
+.profile-photo{
+  background-image: url('https://scontent.fakl7-1.fna.fbcdn.net/v/t1.0-9/40665939_1690756734367134_4013511178490740736_n.jpg?_nc_cat=106&_nc_ht=scontent.fakl7-1.fna&oh=3c97fded84a3176f8f878cc149a3d4ac&oe=5C6DEFF7');
+  background-size: contain;
+  border-radius: 50%;
+  height: 30vw;
+  margin-right: 1em;
+  width: 30vw;
+  max-height: 270px;
+  max-width: 270px;
+}
+
+.profile-text{
+  font-size: 2em;
+  transform: translateY(20%);
 }
 
 
