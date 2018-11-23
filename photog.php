@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <div class="background-colour">
+    <div class="background-colour-contact">
 
       <div class="link-home">
         <a href="index.php">izsi</a>
@@ -20,9 +20,17 @@
         <a href="contact.php">contact</a>
       </div>
 
-
-    <div class="main">
-
     </div>
-</div>
+
+    <div class="floating-content-projects">
+      <div class="project-title">
+        Photography
+      </div>
+    </div>
+
+    <div class="project-blurb">
+      <p class="medium-p">Nulla ac est nec nisi bibendum vehicula. Etiam luctus euismod pretium. Maecenas convallis turpis vehicula justo blandit varius.</p>
+    </div>
+
+
 <?php require 'footer.php'; ?>
