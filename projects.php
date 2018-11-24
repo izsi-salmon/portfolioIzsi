@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <div class="background-colour">
+    <div class="background-colour background-colour-splash">
 
       <div class="link-home">
         <a href="index.php">izsi</a>

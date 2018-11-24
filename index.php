@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <div class="background-colour">
+    <div class="background-colour background-colour-splash">
 
       <div class="nav caps">
         <a href="projects.php">projects</a>

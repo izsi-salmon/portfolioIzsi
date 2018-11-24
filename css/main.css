@@ -24,18 +24,18 @@ html{
 }
 
 .background-colour{
-  background-color: #fff;
-  background-image: -webkit-linear-gradient(290deg, #ffbbec 0%, #ffb26e 100%);
+  background-color: #FFDB73;
+  /* background-color: #FFD05E; */
+  /* background-image: -webkit-linear-gradient(290deg, #ffbbec 0%, #ffb26e 100%);
   background-image: -o-linear-gradient(290deg, #ffbbec 0%, #ffb26e 100%);
-  background-image: linear-gradient(20deg, #ffbbec 0%, #ffb26e 100%);
+  background-image: linear-gradient(20deg, #ffbbec 0%, #ffb26e 100%); */
+}
+
+.background-colour-splash{
   height: 100vh;
 }
 
 .background-colour-contact{
-  background-color: #fff;
-  background-image: -webkit-linear-gradient(290deg, #ffbbec 0%, #ffb26e 100%);
-  background-image: -o-linear-gradient(290deg, #ffbbec 0%, #ffb26e 100%);
-  background-image: linear-gradient(20deg, #ffbbec 0%, #ffb26e 100%);
   height: 20vh;
 }
 
@@ -237,20 +237,34 @@ a.cta-text:link, a.cta-text:visited, a.cta-text:hover, a.cta-text:active{
   color: #999999;
 }
 
-/* MÉTIERS */
+/* MÉTIER */
 
-.floating-content-projects{
-  font-size: 2.2em;
-  margin-left: 6vw;
-  transform: translateY(-60%);
+.metier-header{
+  margin: 0 auto;
+  padding: 2em 0 1.5em 0;
+  width: 80%;
 }
 
 .project-title{
+  font-size: 2em;
+  max-width: 60%;
 }
 
 .project-blurb{
-  margin: -1em 0 0 6vw;
-  width: 80%;
+
+}
+
+.gallery-container{
+  margin: 3em auto 1em auto;
+  width: 84vw;
+}
+
+.gallery-img{
+  object-fit: cover;
+  cursor: pointer;
+  padding: 1vw;
+  height: 25vw;
+  width: 25vw;
 }
 
 
