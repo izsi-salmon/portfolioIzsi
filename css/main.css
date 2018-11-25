@@ -190,7 +190,7 @@ a.cta-text:link, a.cta-text:visited, a.cta-text:hover, a.cta-text:active{
 }
 
 .profile-photo{
-  background-image: url('https://scontent.fakl7-1.fna.fbcdn.net/v/t1.0-9/40665939_1690756734367134_4013511178490740736_n.jpg?_nc_cat=106&_nc_ht=scontent.fakl7-1.fna&oh=3c97fded84a3176f8f878cc149a3d4ac&oe=5C6DEFF7');
+  background-image: url('https://mir-cdn.behance.net/v1/rendition/user/138/e5ea4c98946039.5bfa4fe989fd9.jpg');
   background-size: contain;
   border-radius: 50%;
   height: 30vw;
@@ -240,7 +240,7 @@ a.cta-text:link, a.cta-text:visited, a.cta-text:hover, a.cta-text:active{
 /* MÉTIER */
 
 .metier-header{
-  margin: 0 auto;
+  margin: 2em auto 0 auto;
   padding: 2em 0 1.5em 0;
   width: 80%;
 }
@@ -255,7 +255,7 @@ a.cta-text:link, a.cta-text:visited, a.cta-text:hover, a.cta-text:active{
 }
 
 .gallery-container{
-  margin: 3em auto 1em auto;
+  margin: 1em auto 1em auto;
   width: 84vw;
 }
 
