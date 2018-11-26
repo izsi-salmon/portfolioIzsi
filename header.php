@@ -1,15 +1,15 @@
 <?php
 
-  if(is_dir('vendor')){
-    require 'vendor/autoload.php';
-  } else{
-    require '../vendor/autoload.php';
-  }
+  // if(is_dir('vendor')){
+  //   require 'vendor/autoload.php';
+  // } else{
+  //   require '../vendor/autoload.php';
+  // }
 
   // Getting the project URL from the environment file – dynamic alternative to hard coding the URL
-  $dotenv = new Dotenv\Dotenv(__DIR__ . '/..');
-  $dotenv->load();
-  $baseURL = getenv('PROJECT_URL');
+  // $dotenv = new Dotenv\Dotenv(__DIR__ . '/..');
+  // $dotenv->load();
+  // $baseURL = getenv('PROJECT_URL');
 
   require('database/connection.php');
 
