@@ -1,5 +1,24 @@
 <?php require 'header.php' ?>
 
+<?php
+
+
+  $sql = 'SELECT * FROM `webProjects`';
+  $result = mysqli_query($dbc, $sql);
+
+
+  if($result){
+
+    $allWebProjects = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+  } else{
+    die('Error, no results.');
+  }
+
+  $table = $_GET['table'];
+
+?>
+
   <body>
 
     <div class="background-colour">
@@ -27,20 +46,43 @@
 
     </div>
 
+    <?php if($allWebProjects): ?>
       <div class="gallery-container">
-        <img src="https://cdn3.iconfinder.com/data/icons/objects-shapes-emojis/513/emoji-emoticon-shape-happy-face-smiley_33-512.png" class="gallery-img">
-        <img src="https://cdn3.iconfinder.com/data/icons/objects-shapes-emojis/513/emoji-emoticon-shape-happy-face-smiley_33-512.png" class="gallery-img">
-        <img src="https://cdn3.iconfinder.com/data/icons/objects-shapes-emojis/513/emoji-emoticon-shape-happy-face-smiley_33-512.png" class="gallery-img">
-        <img src="https://cdn3.iconfinder.com/data/icons/objects-shapes-emojis/513/emoji-emoticon-shape-happy-face-smiley_33-512.png" class="gallery-img">
-        <img src="https://cdn3.iconfinder.com/data/icons/objects-shapes-emojis/513/emoji-emoticon-shape-happy-face-smiley_33-512.png" class="gallery-img">
-        <img src="https://cdn3.iconfinder.com/data/icons/objects-shapes-emojis/513/emoji-emoticon-shape-happy-face-smiley_33-512.png" class="gallery-img">
-        <img src="https://cdn3.iconfinder.com/data/icons/objects-shapes-emojis/513/emoji-emoticon-shape-happy-face-smiley_33-512.png" class="gallery-img">
-        <img src="https://cdn3.iconfinder.com/data/icons/objects-shapes-emojis/513/emoji-emoticon-shape-happy-face-smiley_33-512.png" class="gallery-img">
-        <img src="https://cdn3.iconfinder.com/data/icons/objects-shapes-emojis/513/emoji-emoticon-shape-happy-face-smiley_33-512.png" class="gallery-img">
-        <img src="https://cdn3.iconfinder.com/data/icons/objects-shapes-emojis/513/emoji-emoticon-shape-happy-face-smiley_33-512.png" class="gallery-img">
+            <?php foreach ($allWebProjects as $project): ?>
+                <img src="images/<?= $project['image0'] ?>.jpg" class="gallery-img" id="<?= $project['id'] ?>">
+            <?php endforeach; ?>
       </div>
+          <?php else: ?>
+            <div class="error-message">
+              <p>Sorry, no web projects could be found.</p>
+            </div>
+   <?php endif; ?>
 
+   <!-- MODAL! -->
+   <div class="drop-shadow" id="modalDisplay">
 
+     <div class="close-icon" id="closeTrigger"><i class="fas fa-times"></i></div>
 
+      <div class="aligner-top"></div>
+        <div class="modal-container-flex">
+          <div class="chevron"><i class="fas fa-chevron-left chevron" id="imagePrev"></i></div>
+            <div class="modal">
+              <div class="modal-image-container">
+                <img id="projectImg">
+              </div>
+              <div class="modal-content-container">
+                <h3 id="projectTitle"></h3>
+                <div id="projectContext" class="caps text-secondary"></div>
+                <div id="projectDescription"></div>
+                <a id="projectLink">Check out the site</a>
+              </div>
+            </div>
+          <div class="chevron"><i class="fas fa-chevron-right chevron" id="imageNext"></i></div>
+        </div>
+      <div class="aligner-bottom"></div>
 
+   </div>
+<script>
+ var table = '<?= $table ?>';
+</script>
 <?php require 'footer.php'; ?>
