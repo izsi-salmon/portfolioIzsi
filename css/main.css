@@ -23,6 +23,10 @@ html{
   font-family: gothamMedium;
 }
 
+.hidden{
+  display: none;
+}
+
 .background-colour{
   background-color: #FFDB73;
   /* background-color: #FFD05E; */
@@ -245,7 +249,7 @@ a.cta-text:hover{
   color: #999999;
 }
 
-/* MÉTIER */
+/* METIER */
 
 .metier-header{
   margin: 2em auto 0 auto;
@@ -253,13 +257,9 @@ a.cta-text:hover{
   width: 80%;
 }
 
-.project-title{
+.metier-title{
   font-size: 2em;
   max-width: 60%;
-}
-
-.project-blurb{
-
 }
 
 .gallery-container{
@@ -371,8 +371,44 @@ a#projectLink:hover, a#projectLink:active{
   color: #4297FF;
 }
 
+@media only screen and (min-width: 664px){
+
+  .metier-title{
+    max-width: 40%;
+  }
+
+  .metier-blurb{
+    max-width: 90%;
+  }
+
+}
+
 
 @media only screen and (min-width: 768px){
+
+  .hidden{
+    display: inline;
+  }
+
+  .link-home{
+    font-size: 1.5em;
+    top: 3vh;
+    left: 2vh;
+  }
+
+  .nav{
+    font-size: 0.9em;
+    height: 10vh;
+    padding: 4vh;
+  }
+
+  .nav a:link, .nav a:visited, .nav a:hover, .nav a:active{
+    margin-left: 2.5em;
+  }
+
+  .main-centred{
+    height: 80vh;
+  }
 
   .splash-content h1{
     font-size: 3.2em;
@@ -392,24 +428,47 @@ a#projectLink:hover, a#projectLink:active{
     margin-top: 2.5em;
   }
 
+  /* METIER */
+
+  .metier-header{
+    max-width: 1020px;
+    width: 70%;
+  }
+
+  .metier-title{
+    font-size: 2.3em;
+  }
+
+  .gallery-container{
+    width: 71vw;
+    max-width: 1050px;
+  }
+
+  .gallery-img{
+    height: 21vw;
+    max-height: 305px;
+    max-width: 305px;
+    width: 21vw;
+  }
+
 }
 
 @media only screen and (min-width: 1024px){
-  .nav{
-    font-size: 0.9em;
-    height: 10vh;
-    padding: 4vh;
+
+  .metier-title{
+    font-size: 2.7em;
   }
 
-  .nav a:link, .nav a:visited, .nav a:hover, .nav a:active{
-    margin-left: 2.5em;
-    /* padding-bottom: 0.1em; */
+  .metier-blurb{
+    font-size: 1.4em;
   }
 
-  .main-centred{
-    height: 80vh;
-  }
+}
 
+@media only screen and (min-width: 1440px){
+  .metier-title{
+    font-size: 3em;
+  }
 }
 
 

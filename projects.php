@@ -5,7 +5,7 @@
     <div class="background-colour background-colour-splash">
 
       <div class="link-home">
-        <a href="index.php">izsi</a>
+        <a href="index.php">izsi<span class="hidden"> salmon</span></a>
       </div>
 
       <div class="nav caps">

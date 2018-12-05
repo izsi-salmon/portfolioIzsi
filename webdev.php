@@ -24,7 +24,7 @@
     <div class="background-colour">
 
       <div class="link-home">
-        <a href="index.php">izsi</a>
+        <a href="index.php">izsi<span class="hidden"> salmon</span></a>
       </div>
 
       <div class="nav caps">
@@ -34,11 +34,11 @@
 
       <div class="metier-header">
 
-        <div class="project-title">
+        <div class="metier-title">
           Web Developement
         </div>
 
-        <div class="project-blurb">
+        <div class="metier-blurb">
           <p class="medium-p">Nulla ac est nec nisi bibendum vehicula. Etiam luctus euismod pretium. Maecenas convallis turpis vehicula justo blandit varius.</p>
         </div>
 
@@ -84,6 +84,7 @@
       <div class="aligner-bottom"></div>
 
    </div>
+
 <script>
  var table = '<?= $table ?>';
 </script>

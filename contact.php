@@ -5,7 +5,7 @@
     <div class="background-colour background-colour-contact">
 
       <div class="link-home">
-        <a href="index.php">izsi</a>
+        <a href="index.php">izsi<span class="hidden"> salmon</span></a>
       </div>
 
       <div class="nav caps">
@@ -20,7 +20,7 @@
         <!-- background image c: -->
       </div>
       <div class="profile-text">
-        Hi,<br> I'm Izsi 
+        Hi,<br> I'm Izsi
       </div>
 
     </div>

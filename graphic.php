@@ -24,7 +24,7 @@
     <div class="background-colour">
 
       <div class="link-home">
-        <a href="index.php">izsi</a>
+        <a href="index.php">izsi<span class="hidden"> salmon</span> </a>
       </div>
 
       <div class="nav caps">
@@ -34,11 +34,11 @@
 
       <div class="metier-header">
 
-        <div class="project-title">
+        <div class="metier-title">
           Graphic Design
         </div>
 
-        <div class="project-blurb">
+        <div class="metier-blurb">
           <p class="medium-p">Nulla ac est nec nisi bibendum vehicula. Etiam luctus euismod pretium. Maecenas convallis turpis vehicula justo blandit varius.</p>
         </div>
 
@@ -58,6 +58,33 @@
                   <p>No projects could be found. :c Try checking your connection! :)</p>
                 </div>
        <?php endif; ?>
+      </div>
+
+      <!-- MODAL! -->
+      <div class="drop-shadow" id="modalDisplay">
+
+        <div class="close-icon" id="closeTrigger"><i class="fas fa-times"></i></div>
+
+         <div class="aligner-top"></div>
+           <div class="modal-container-flex">
+
+               <div class="modal" id="modalContent">
+                 <div class="modal-inner-content">
+                   <div class="modal-image-container">
+                     <img id="projectImg">
+                   </div>
+                   <div class="modal-content-container">
+                     <h3 id="projectTitle"></h3>
+                     <div id="projectContext" class="caps text-secondary"></div>
+                     <div id="projectDescription"></div>
+                     <a id="projectLink" target="_blank">Check out the site</a>
+                   </div>
+                 </div>
+               </div>
+
+           </div>
+         <div class="aligner-bottom"></div>
+
       </div>
 
 
