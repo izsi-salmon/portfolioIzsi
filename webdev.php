@@ -65,19 +65,21 @@
 
       <div class="aligner-top"></div>
         <div class="modal-container-flex">
-          <div class="chevron"><i class="fas fa-chevron-left chevron" id="imagePrev"></i></div>
-            <div class="modal">
-              <div class="modal-image-container">
-                <img id="projectImg">
-              </div>
-              <div class="modal-content-container">
-                <h3 id="projectTitle"></h3>
-                <div id="projectContext" class="caps text-secondary"></div>
-                <div id="projectDescription"></div>
-                <a id="projectLink">Check out the site</a>
+
+            <div class="modal" id="modalContent">
+              <div class="modal-inner-content">
+                <div class="modal-image-container">
+                  <img id="projectImg">
+                </div>
+                <div class="modal-content-container">
+                  <h3 id="projectTitle"></h3>
+                  <div id="projectContext" class="caps text-secondary"></div>
+                  <div id="projectDescription"></div>
+                  <a id="projectLink" target="_blank">Check out the site</a>
+                </div>
               </div>
             </div>
-          <div class="chevron"><i class="fas fa-chevron-right chevron" id="imageNext"></i></div>
+
         </div>
       <div class="aligner-bottom"></div>
 

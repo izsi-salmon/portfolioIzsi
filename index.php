@@ -19,7 +19,7 @@
 
         <div class="splash-nav caps">
           <div class="splash-nav-flex">
-            <a href="webdev.php">Web Dev</a>
+            <a href="webdev.php">Web Design</a>
             <i class="fas fa-circle"></i>
             <a href="graphic.php">Graphic Design</a>
             <i class="fas fa-circle"></i>

@@ -6,6 +6,8 @@ var selectedProject;
 
 // Modal Content
 var modal = document.getElementById('modalDisplay');
+var modalContent = document.getElementById('modalContent');
+var closeIcon = document.getElementById('closeTrigger');
 var projectImg = document.getElementById('projectImg');
 var projectTitle = document.getElementById('projectTitle');
 var projectContext = document.getElementById('projectContext');
@@ -32,7 +34,6 @@ function getProject(idNo){
       },
       success: function(dataFromApi){
         selectedProject = dataFromApi[0];
-        // console.log(selectedProject);
         writeModal();
       },
       error: function(){
@@ -45,7 +46,10 @@ function getProject(idNo){
 }
 
 function writeModal(){
-  modal.style.display = 'flex';
+  modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+  modal.style.pointerEvents = 'all';
+  modalContent.style.opacity = '1';
+  closeIcon.style.opacity = '1';
   projectImg.setAttribute('src', './images/'+selectedProject.image0+'.jpg');
   projectTitle.innerHTML = selectedProject.title;
   projectContext.innerHTML = selectedProject.context;
@@ -57,3 +61,16 @@ function writeModal(){
     projectLink.style.display = 'none';
   }
 }
+
+function closeModal(){
+  modal.style.backgroundColor = 'rgba(0,0,0,0)';
+  modal.style.pointerEvents = 'none';
+  modalContent.style.opacity = '0';
+  closeIcon.style.opacity = '0';
+}
+
+$(modal).click(function(event) {
+    if (!$(event.target).closest(modalContent).length){
+      closeModal();
+    }
+});

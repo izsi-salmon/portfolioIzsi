@@ -107,7 +107,7 @@ html{
 .splash-location{
   font-family: gothamThin;
   font-size: 0.9em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.2em;
 }
 
 .splash-nav{
@@ -126,8 +126,8 @@ html{
 }
 
 .splash-nav a:hover{
-  /* border-bottom: 1px solid #1C1C1C; */
-  /* margin: 0; */
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in;
 }
 
 .splash-nav i{
@@ -150,6 +150,12 @@ a.cta-text:link, a.cta-text:visited, a.cta-text:hover, a.cta-text:active{
   mix-blend-mode: multiply;
   padding: 0.2em 0.8em 0.3em 0.8em;
   text-decoration: none;
+
+}
+
+a.cta-text:hover{
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in;
 }
 
 /* PROJECTS */
@@ -272,15 +278,17 @@ a.cta-text:link, a.cta-text:visited, a.cta-text:hover, a.cta-text:active{
 /* MODAL STYLES */
 
 .drop-shadow{
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
+  background-color: rgba(0, 0, 0, 0);
     justify-content: center;
     align-items: center;
+  display: flex;
+  pointer-events: none;
   position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+  transition: 0.2s ease-in;
 }
 
 .close-icon{
@@ -289,11 +297,7 @@ a.cta-text:link, a.cta-text:visited, a.cta-text:hover, a.cta-text:active{
   position: absolute;
     top: 3vw;
     right: 3vw;
-}
-
-.modal-container-flex .chevron{
-  display: block;
-  color: #FFF;
+  opacity: 0;
 }
 
 .modal-container-flex{
@@ -301,15 +305,21 @@ a.cta-text:link, a.cta-text:visited, a.cta-text:hover, a.cta-text:active{
     justify-content: space-around;
     align-items: center;
   margin: auto;
-  width: 90%;
+  width: 100%;
 }
 
 .modal{
   background-color: #FFF;
-  padding: 1em;
   margin: 0 1em;
   max-height: 70vh;
-  overflow: scroll;
+  opacity: 0;
+  padding: 0.7em;
+  transition: 0.2s ease-in;
+}
+
+.modal-inner-content{
+  max-height: 70vh;
+  overflow-y: scroll;
 }
 
 .modal-image-container{
@@ -362,4 +372,67 @@ a#projectLink:hover, a#projectLink:active{
 }
 
 
-/* end :) */
+@media only screen and (min-width: 768px){
+
+  .splash-content h1{
+    font-size: 3.2em;
+  }
+
+  .splash-location{
+    font-size: 1.1em;
+    margin-bottom: 1em;
+  }
+
+  .splash-nav{
+    font-size: 0.9em;
+  }
+
+  .cta{
+    font-size: 1.2em;
+    margin-top: 2.5em;
+  }
+
+}
+
+@media only screen and (min-width: 1024px){
+  .nav{
+    font-size: 0.9em;
+    height: 10vh;
+    padding: 4vh;
+  }
+
+  .nav a:link, .nav a:visited, .nav a:hover, .nav a:active{
+    margin-left: 2.5em;
+    /* padding-bottom: 0.1em; */
+  }
+
+  .main-centred{
+    height: 80vh;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* the end :) */
