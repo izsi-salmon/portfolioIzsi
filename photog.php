@@ -56,7 +56,7 @@
             </div>
                 <?php else: ?>
                   <div class="error-message">
-                    <p>No projects could be found. :c Try checking your connection! Or be patient until I have uploaded some projects to this page...</p>
+                    <p>No projects added yet!...</p>
                   </div>
          <?php endif; ?>
         </div>

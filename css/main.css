@@ -44,8 +44,8 @@ html{
 }
 
 .text-secondary{
-  color: #878787;
-  opacity: 0.8;
+  color: #575757;
+  opacity: 0.5;
 }
 
 .caps{
@@ -112,6 +112,8 @@ html{
   font-family: gothamThin;
   font-size: 0.9em;
   margin-bottom: 1.2em;
+  margin-top: 1.2em;
+  opacity: 0.4;
 }
 
 .splash-nav{
@@ -131,7 +133,7 @@ html{
 
 .splash-nav a:hover{
   opacity: 0.7;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.5s;
 }
 
 .splash-nav i{
@@ -141,7 +143,8 @@ html{
 
 .cta{
   border-radius: 1em;
-  display: inline-block;
+  /* display: inline-block; */
+  display: none;
   margin-top: 2.3em;
 }
 
@@ -247,6 +250,7 @@ a.cta-text:hover{
 
 .contact-links a:hover, .contact-links a:active{
   color: #999999;
+  transition: color 0.5s;
 }
 
 /* METIER */
@@ -312,6 +316,7 @@ a.cta-text:hover{
   background-color: #FFF;
   margin: 0 1em;
   max-height: 70vh;
+  max-width: 600px;
   opacity: 0;
   padding: 0.7em;
   transition: 0.2s ease-in;
@@ -327,12 +332,12 @@ a.cta-text:hover{
 }
 
 .modal-image-container img{
-  max-height: 400px;
+  max-height: 500px;
   max-width: 100%;
 }
 
 .modal-content-container{
-  margin-top: 1em;
+  margin: 1em auto 0 auto;
 }
 
 #projectTitle{
@@ -371,7 +376,54 @@ a#projectLink:hover, a#projectLink:active{
   color: #4297FF;
 }
 
+@media only screen and (min-width: 410px){
+  /* CONTACT */
+
+  .floating-content-contact{
+    transform: translateY(-48%);
+  }
+
+  .profile-text{
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 500px){
+  /* CONTACT */
+
+  .floating-content-contact{
+    transform: translateY(-48%);
+  }
+
+  .profile-text{
+    font-size: 3em;
+  }
+
+}
+
 @media only screen and (min-width: 664px){
+  /* CONTACT */
+
+  .floating-content-contact{
+    width: 80%;
+  }
+
+  .main-info{
+    margin: -3em auto;
+    width: 70%;
+  }
+
+  .medium-p{
+    font-size: 1em;
+  }
+
+  .contact-links{
+    font-size: 1.7em;
+    margin: 4em auto 1.5em auto;
+    width: 45%;
+  }
+
+  /* METIER */
 
   .metier-title{
     max-width: 40%;
@@ -411,12 +463,12 @@ a#projectLink:hover, a#projectLink:active{
   }
 
   .splash-content h1{
-    font-size: 3.2em;
+    font-size: 4.5em;
   }
 
   .splash-location{
     font-size: 1.1em;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
   }
 
   .splash-nav{
@@ -426,6 +478,12 @@ a#projectLink:hover, a#projectLink:active{
   .cta{
     font-size: 1.2em;
     margin-top: 2.5em;
+  }
+
+  /* CONTACT */
+
+  .profile-text{
+    font-size: 4em;
   }
 
   /* METIER */
@@ -451,16 +509,69 @@ a#projectLink:hover, a#projectLink:active{
     width: 21vw;
   }
 
+  /* MODAL */
+
+  .modal{
+    padding: 1em;
+  }
+
 }
 
 @media only screen and (min-width: 1024px){
+
+  /* CONTACT */
+
+  .floating-content-contact{
+    max-width: 1000px;
+    width: 60%;
+  }
+
+  .main-info{
+    width: 55%;
+    max-width: 900px;
+  }
+
+  .contact-links{
+    font-size: 2em;
+    margin: 5em auto 1.5em auto;
+    max-width: 400px;
+    width: 45%;
+  }
+
+  /* METIER */
 
   .metier-title{
     font-size: 2.7em;
   }
 
   .metier-blurb{
-    font-size: 1.4em;
+    font-size: 1.2em;
+  }
+
+}
+
+@media only screen and (min-width: 1300px){
+
+  /* CONTACT */
+
+  .background-colour-contact{
+    height: 25vh;
+  }
+
+  /* MODAL */
+
+  .modal{
+    max-height: 90vh;
+    max-width: 800px;
+    padding: 2em;
+  }
+
+  .modal-inner-content{
+    max-height: 80vh;
+  }
+
+  .modal-image-container img{
+    max-height: 700px;
   }
 
 }

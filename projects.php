@@ -19,11 +19,11 @@
   <div class="splash-content">
 
     <div class="link-project">
-      <div><a href="webdev.php?table=webProjects" class="">web dev</a></div>
+      <div><a href="webdev.php?table=webProjects" class="">web design</a></div>
     </div>
 
     <div class="link-project">
-      <div><a href="graphic.php?table=graphicProjects" class="">graphics</a></div>
+      <div><a href="graphic.php?table=graphicProjects" class="">graphic design</a></div>
     </div>
 
     <div class="link-project">

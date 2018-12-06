@@ -50,12 +50,14 @@ function writeModal(){
   modal.style.pointerEvents = 'all';
   modalContent.style.opacity = '1';
   closeIcon.style.opacity = '1';
+  document.body.style.overflowY = 'hidden';
   projectImg.setAttribute('src', './images/'+selectedProject.image0+'.jpg');
   projectTitle.innerHTML = selectedProject.title;
   projectContext.innerHTML = selectedProject.context;
   projectDescription.innerHTML = selectedProject.description;
   if(selectedProject.link){
     projectLink.innerHTML = 'Check out the site';
+    projectLink.style.display = 'block';
     projectLink.setAttribute('href', selectedProject.link);
   } else{
     projectLink.style.display = 'none';
@@ -67,6 +69,7 @@ function closeModal(){
   modal.style.pointerEvents = 'none';
   modalContent.style.opacity = '0';
   closeIcon.style.opacity = '0';
+  document.body.style.overflowY = 'scroll';
 }
 
 $(modal).click(function(event) {
