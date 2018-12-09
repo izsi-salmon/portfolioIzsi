@@ -37,4 +37,6 @@
       </div>
     </div>
 </div>
+
+<img src="images/icon.png" alt="sting ray :)" class="ray">
 <?php require 'footer.php'; ?>

@@ -6,7 +6,7 @@
   if($dbc){
     $dbc->set_charset('utf8');
   } else{
-    echo('Connect to database failed, please check your environment files and make sure username, password and table names are coorect.');
+    echo('Connect to database failed, please check your environment files and make sure username, password and table names are correct.');
   }
 
  ?>
